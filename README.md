@@ -1,4 +1,5 @@
-[ola image](https://github.com/user-attachments/assets/cedb97a1-99b1-4446-8aa9-bd40fad337a4)
+![Ola_Cabs_logo svg](https://github.com/user-attachments/assets/dfd9661b-ecf4-4cda-a03a-c2f6d2861586)
+
 # 🚖 OLA Ride Analytics  
 
 This project analyzes ride booking data for OLA, focusing on **cancellations, success rates, and ride trends**. The dataset is processed using **MySQL Workbench**, and insights are visualized through an interactive **Power BI dashboard**.
