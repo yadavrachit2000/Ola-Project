@@ -1,61 +1,56 @@
-![Ola_Cabs_logo svg](https://github.com/user-attachments/assets/d2c23c4a-d29e-43a8-be37-cc14c0513ce3)
-## OLA Cancellation Analysis  
+[ola image](https://github.com/user-attachments/assets/cedb97a1-99b1-4446-8aa9-bd40fad337a4)
+# 🚖 OLA Ride Analytics  
 
-This project analyzes ride cancellations for OLA using **MySQL Workbench** for database management and **Power BI** for visualization. The dashboard provides insights into driver and customer ride cancellations, total bookings, success rates, and cancellation trends.  
+This project analyzes ride booking data for OLA, focusing on **cancellations, success rates, and ride trends**. The dataset is processed using **MySQL Workbench**, and insights are visualized through an interactive **Power BI dashboard**.
 
-## 🚀 Features  
+## 📊 Features  
 
-- **Data Processing**: MySQL queries to clean and process ride cancellation data.  
-- **Interactive Dashboard**: Power BI visuals to explore ride cancellations by drivers and customers.  
-- **Key Metrics**:  
-  - Total Bookings  
-  - Total Successful Bookings  
-  - Total Canceled Bookings  
-  - Cancellation Rate  
-- **Cancellation Reasons**: Pie charts for driver and customer ride cancellations.  
-- **Date Filtering**: Allows users to select specific time ranges for analysis.
-
-  ## 📷 Screenshot
-    
-![Screenshot 2025-02-18 171931](https://github.com/user-attachments/assets/f3312a2a-2a41-47bb-a18b-d0678692d458)
+- **Booking Status Breakdown**: Success, driver/customer cancellations, and unfulfilled rides.  
+- **Ride Volume Analysis**: Trends over time to track booking patterns.  
+- **Total Booking Value**: Revenue insights from completed rides.  
+- **Cancellation Insights**: Analyzing driver/customer cancellation reasons.  
+- **Date Filtering**: Select custom date ranges for analysis.  
 
 ## 🛠 Tech Stack  
 
-- **MySQL Workbench** – Database Management  
-- **Power BI** – Data Visualization  
+- **MySQL Workbench** – Data Processing & Querying  
+- **Power BI** – Interactive Dashboard & Visualizations  
 
 ## 📂 Folder Structure  
 
 ```
 /project-folder
-│── /sql-scripts   # SQL Queries for Data Processing
+│── /sql-scripts   # MySQL Queries for Data Processing
 │── /powerbi       # Power BI Dashboard Files
 │── README.md      # Project Documentation
 ```
 
-## 📌 How to Use  
+## 🚀 How to Use  
 
 1. **Database Setup**:  
-   - Import the dataset into MySQL Workbench.  
-   - Run SQL queries to preprocess and clean data.  
+   - Import raw data into **MySQL Workbench**.  
+   - Run SQL scripts for data cleaning and transformation.  
 
-2. **Power BI Visualization**:  
-   - Load the processed data into Power BI.  
-   - Customize and analyze the dashboard.  
+2. **Power BI Dashboard**:  
+   - Load processed data into **Power BI**.  
+   - Explore insights via interactive charts and filters.
+  
+     ## 📷 Screenshot
+     ![Screenshot 2025-02-18 175209](https://github.com/user-attachments/assets/7c22f609-71d1-4abe-bf02-8d1b554eb1b6)
 
-## 📊 Dashboard Overview  
+## 📈 Dashboard Overview  
 
-The Power BI dashboard includes:  
+The **Power BI dashboard** provides:  
+- **Total Bookings & Revenue Analysis**  
+- **Ride Cancellations by Drivers & Customers**  
+- **Booking Trends Over Time**  
 
-- **Total Bookings & Success Rate**  
-- **Cancellations by Drivers & Customers** (with reasons)  
-- **Date Range Selection for Trend Analysis**  
+## 🔥 Future Enhancements  
 
-## 🔥 Future Improvements  
-
-- Integration with live OLA data APIs  
-- More granular analysis by location, peak hours, and vehicle type  
+- Integration with **real-time OLA API data**.  
+- More **granular analysis** (e.g., location, peak hours, vehicle type).  
+- **Predictive analysis** for ride demand forecasting.  
 
 ## 📜 License  
 
-This project is open-source and free to use.  
+This project is **open-source** and free to use.  
