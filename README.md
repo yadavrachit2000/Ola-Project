@@ -1,57 +1,75 @@
 ![Ola_Cabs_logo svg](https://github.com/user-attachments/assets/dfd9661b-ecf4-4cda-a03a-c2f6d2861586)
+# OLA Ride Analytics
 
-# 🚖 OLA Ride Analytics  
+## 📊 Project Overview
+This project provides a comprehensive analysis of OLA ride data using **MySQL Workbench** for data querying and **Power BI** for interactive dashboard visualizations. The goal is to derive insights related to customer behavior, ride performance, payment methods, and driver analytics to support business decision-making and operational improvements.
 
-This project analyzes ride booking data for OLA, focusing on **cancellations, success rates, and ride trends**. The dataset is processed using **MySQL Workbench**, and insights are visualized through an interactive **Power BI dashboard**.
+---
 
-## 📊 Features  
+## 🛠️ Software & Tools Used
 
-- **Booking Status Breakdown**: Success, driver/customer cancellations, and unfulfilled rides.  
-- **Ride Volume Analysis**: Trends over time to track booking patterns.  
-- **Total Booking Value**: Revenue insights from completed rides.  
-- **Cancellation Insights**: Analyzing driver/customer cancellation reasons.  
-- **Date Filtering**: Select custom date ranges for analysis.  
+- **MySQL Workbench**: For writing and executing SQL queries to extract, transform, and analyze ride data.
+- **Power BI**: To create dynamic and interactive dashboards, visualizing key performance indicators (KPIs) and insights derived from SQL analysis.
 
-## 🛠 Tech Stack  
+---
 
-- **MySQL Workbench** – Data Processing & Querying  
-- **Power BI** – Interactive Dashboard & Visualizations  
-
-## 📂 Folder Structure  
+## 🏗️ Project Structure
 
 ```
-/project-folder
-│── /sql-scripts   # MySQL Queries for Data Processing
-│── /powerbi       # Power BI Dashboard Files
-│── README.md      # Project Documentation
+OLA-Ride-Analytics/
+│
+├── dashboards/
+│   └── ola_ride_analytics.pbix
+├── data/
+│   └── Ola Booking Data.csv
+├── README.md
+├── Ride Analytics Queries and Results.pdf
 ```
 
-## 🚀 How to Use  
+---
 
-1. **Database Setup**:  
-   - Import raw data into **MySQL Workbench**.  
-   - Run SQL scripts for data cleaning and transformation.  
+## 🔍 Key SQL Analyses Performed
 
-2. **Power BI Dashboard**:  
-   - Load processed data into **Power BI**.  
-   - Explore insights via interactive charts and filters.
-  
-     ## 📷 Screenshot
-     ![Screenshot 2025-02-18 175209](https://github.com/user-attachments/assets/7c22f609-71d1-4abe-bf02-8d1b554eb1b6)
+1. **Successful Bookings**: Retrieved all rides with a successful booking status.
+2. **Average Ride Distance**: Calculated the average ride distance per vehicle type.
+3. **Cancelled Rides by Customers**: Computed the total number of customer-cancelled rides.
+4. **Top 5 Customers**: Identified customers with the highest number of rides.
+5. **Driver Cancellations**: Analyzed driver cancellations due to personal and car-related reasons.
+6. **Driver Ratings (Prime Sedan)**: Extracted max and min driver ratings for Prime Sedan rides.
+7. **UPI Payments**: Retrieved rides paid via UPI.
+8. **Customer Ratings**: Found average customer ratings per vehicle type.
+9. **Total Booking Value**: Calculated the total value of successfully completed rides.
+10. **Incomplete Rides**: Listed all incomplete rides with corresponding reasons.
 
-## 📈 Dashboard Overview  
+---
 
-The **Power BI dashboard** provides:  
-- **Total Bookings & Revenue Analysis**  
-- **Ride Cancellations by Drivers & Customers**  
-- **Booking Trends Over Time**  
+## 📈 Power BI Dashboard Highlights
 
-## 🔥 Future Enhancements  
+- **Ride Distribution**: Breakdown of rides by vehicle type, location, and booking status.
+- **Customer Insights**: Key customer trends, top customers by bookings, and rating patterns.
+- **Revenue Metrics**: Total booking value visualization, highlighting successful and incomplete rides.
+- **Driver Performance**: Analysis of driver ratings and cancellation reasons.
+- **Payment Analysis**: Distribution of payment methods used across rides.
 
-- Integration with **real-time OLA API data**.  
-- More **granular analysis** (e.g., location, peak hours, vehicle type).  
-- **Predictive analysis** for ride demand forecasting.  
+---
 
-## 📜 License  
+## 🎯 Key Insights & Business Recommendations
 
-This project is **open-source** and free to use.  
+- **Customer Retention**: Focus on top customers by offering loyalty programs.
+- **Operational Efficiency**: Reduce driver-related cancellations through improved support.
+- **Revenue Growth**: Promote Prime Sedan rides, which have higher customer ratings.
+- **Payment Optimization**: Encourage UPI payments due to seamless transaction processes.
+
+---
+
+## 🚀 How to Run This Project
+
+1. **Database Setup**:
+   - Import the dataset into MySQL Workbench.
+   - Execute the SQL scripts in the Ride Analytics Queries and Results.pdf.
+
+2. **Power BI Dashboard**:
+   - Open the `OLA Ride Analytics.pbix` using Power BI Desktop.
+   - Refresh data connections to load the latest data from MySQL.
+
+---
